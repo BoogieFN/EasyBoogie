@@ -18,7 +18,6 @@ namespace EasyBoogie
                 Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("    ______                 ____  ____  ____  ________________");
                 Console.WriteLine("   / ____/___ ________  __/ __ )/ __ \\/ __ \\/ ____/  _/ ____/");
-
                 Console.WriteLine("  / __/ / __ `/ ___/ / / / __  / / / / / / / / __ / // __/   ");
                 Console.WriteLine(" / /___/ /_/ (__  ) /_/ / /_/ / /_/ / /_/ / /_/ // // /___   ");
                 Console.WriteLine("/_____/\\__,_/____/\\__, /_____/\\____/\\____/\\____/___/_____/   ");
@@ -52,7 +51,7 @@ namespace EasyBoogie
                 System.Net.WebClient client = new System.Net.WebClient();
                 client.DownloadFile("https://cdn.boogiefn.dev/assets/dlls/BAC.exe", EasyBoogieBuildPath + "/FortniteGame/Binaries/Win64/FortniteClient-Win64-Shipping_BE.exe");
                 client.DownloadFile("https://cdn.boogiefn.dev/assets/dlls/BAC.exe", EasyBoogieBuildPath + "/FortniteGame/Binaries/Win64/FortniteClient-Win64-Shipping_EAC.exe");
-                client.DownloadFile("https://cdn.discordapp.com/attachments/1059106864303980574/1066797541183717386/Boogie.dll", EasyBoogieBuildPath + "/Boogie.dll");
+                client.DownloadFile("https://github.com/BoogieFN/Boogie/releases/download/BoogieV2/Boogie.dll", EasyBoogieBuildPath + "/Boogie.dll");
                 Console.WriteLine("[BOOGIE] Launching");
                 System.Diagnostics.Process EasyBoogieGame = new System.Diagnostics.Process
                 {
